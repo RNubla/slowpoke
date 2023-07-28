@@ -1,3 +1,6 @@
 [submodule "server"]
 	path = server
 	url = https://github.com/neonbjb/tortoise-tts.git
+[submodule "coqui"]
+	path = coqui
+	url = https://github.com/coqui-ai/TTS
