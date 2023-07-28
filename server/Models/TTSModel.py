@@ -8,4 +8,4 @@ class Preset(BaseModel):
 class TTS(BaseModel):
     text: str
     voice: str | None = "geralt"
-    preset: str
+    preset: str = "ultra_fast"
