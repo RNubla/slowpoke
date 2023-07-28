@@ -21,7 +21,10 @@ def inference(data: TTS):
     global model
 
     # Prep the model
-    voice_samples, conditioning_latents = load_voice("geralt")
+    voice_samples, conditioning_latents = load_voice(data.voice)
+
+    # if voice_samples is None:
+    #     raise HTTPException(status_code=404, detail="Voice was not found")
 
     # Run the model
 
